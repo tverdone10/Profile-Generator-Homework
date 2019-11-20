@@ -175,10 +175,12 @@ function generateHTML(data) {
       </style>
       </head>
       <body>
-      <h1 class = "card">Hello World</h1>
-      <h1>${data.login}</h1>
-         <h2>${data.stars}</h2>
-      </body>
+      <img src = "${data.avatar_url}">
+      <h1 class = "card">Hi, my GitHub account is ${data.login}</h1>
+         <h2 class="card">${data.bio}</h2>
+         <h4 class="card">"I have ${data.public_repos} repos & ${data.stars} starred posts!</h4>
+         <h4 class="card">I'm following ${data.following} accounts & I have ${data.followers} followers</h4>
+         </body>
       </html>
       `;
 }
